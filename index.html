@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Lexa Lab at Georgia State University studies language, literacy, and executive function in children with autism and their families. Family-centered, community-engaged research." />
-  <title>Home | Lexa Lab — Georgia State University</title>
+  <meta name="description" content="LEXA Lab at Georgia State University studies language, literacy, and executive function in children with autism and their families. Family-centered, community-engaged research." />
+  <title>Home | LEXA Lab — Georgia State University</title>
 
   <!-- Fonts: IBM Plex Serif (headings) + IBM Plex Sans (body) + Material Symbols -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -27,13 +27,13 @@
     <div class="nav-inner">
 
       <!-- Logo -->
-      <a href="index.html" class="nav-logo" aria-label="Lexa Lab — Home">
+      <a href="index.html" class="nav-logo" aria-label="LEXA Lab — Home">
         <div class="nav-logo-icon" aria-hidden="true">
           <img src="assets/images/lexa-lab-logo.png" alt="" class="nav-logo-brand-img" />
         </div>
         <div class="nav-logo-text">
-          <span class="nav-logo-name">Lexa Lab</span>
-          <span class="nav-logo-sub">Language, Literacy &amp; Executive Function in Autism</span>
+          <span class="nav-logo-name">LEXA Lab</span>
+          <span class="nav-logo-sub">Language, Literacy, &amp; Executive Function in Autism Lab</span>
         </div>
       </a>
 
@@ -44,8 +44,18 @@
           <li><a href="index.html"        class="nav-link active" aria-current="page">Home</a></li>
           <li><a href="about.html"        class="nav-link">About</a></li>
           <li><a href="team.html"         class="nav-link">Team</a></li>
-          <li><a href="research.html"     class="nav-link">Research Projects</a></li>
+          <li class="nav-item-dropdown">
+            <button class="nav-link nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+              Research
+              <span class="material-symbols-outlined" aria-hidden="true" style="font-size:18px;">expand_more</span>
+            </button>
+            <ul class="nav-dropdown-menu" role="menu">
+              <li role="none"><a role="menuitem" href="research.html" class="nav-dropdown-link">Current Research</a></li>
+              <li role="none"><a role="menuitem" href="past-research.html" class="nav-dropdown-link">Past Research</a></li>
+            </ul>
+          </li>
           <li><a href="publications.html" class="nav-link">Publications</a></li>
+          <li><a href="news.html"          class="nav-link">News</a></li>
           <li><a href="contact.html"      class="nav-link">Contact</a></li>
         </ul>
       </nav>
@@ -70,8 +80,11 @@
       <a href="index.html"        class="mobile-nav-link active" aria-current="page">Home</a>
       <a href="about.html"        class="mobile-nav-link">About</a>
       <a href="team.html"         class="mobile-nav-link">Team</a>
-      <a href="research.html"     class="mobile-nav-link">Research Projects</a>
+      <span class="mobile-nav-group-label">Research</span>
+      <a href="research.html"      class="mobile-nav-link mobile-nav-sublink">Current Research</a>
+      <a href="past-research.html" class="mobile-nav-link mobile-nav-sublink">Past Research</a>
       <a href="publications.html" class="mobile-nav-link">Publications</a>
+      <a href="news.html"        class="mobile-nav-link">News</a>
       <a href="contact.html"      class="mobile-nav-link">Contact</a>
       <a href="contact.html#registry" class="btn-nav">Participate in a Study</a>
     </nav>
@@ -81,6 +94,18 @@
        MAIN CONTENT
        ============================================================ -->
   <main id="main-content">
+
+    <!-- ──────────────────────────────────────────────────────────
+         LAB WORDMARK — full name, large centered display
+         SQUARESPACE: Text block — centered, large display heading
+         ────────────────────────────────────────────────────────── -->
+    <section class="lab-wordmark-band" aria-label="Lab name">
+      <div class="container">
+        <p class="lab-wordmark">
+          Language, Literacy, and Executive Function in Autism (LEXA) Lab
+        </p>
+      </div>
+    </section>
 
     <!-- ──────────────────────────────────────────────────────────
          HERO SECTION
@@ -136,7 +161,7 @@
         <div class="inner">
           <span class="section-label" style="text-align:center; display:block;">Our Mission</span>
           <p id="mission-heading" style="margin-top: 16px;">
-            Lexa Lab is a research group at Georgia State University studying language, literacy, and executive function in children with autism and children with neurodevelopmental differences. We work with families to understand how children communicate, learn to read, and build skills, and to bring those findings to families, educators, and clinicians.
+            LEXA Lab is a research group at Georgia State University studying language, literacy, and executive function in children with autism and children with neurodevelopmental differences. We work with families to understand how children communicate, learn to read, and build skills, and to bring those findings to families, educators, and clinicians.
           </p>
         </div>
       </div>
@@ -320,6 +345,43 @@
     </section>
 
     <!-- ──────────────────────────────────────────────────────────
+         LATEST NEWS — most recent item only
+         SQUARESPACE: Summary block (latest item) / Blog summary
+         MAINTENANCE: Update this block whenever a newer item is added to
+         news.html so the Home page always shows the single latest item.
+         ────────────────────────────────────────────────────────── -->
+    <section class="section-pad" style="background: var(--clr-surface-alt);" aria-labelledby="news-heading">
+      <div class="container">
+        <div class="heading-accent" style="margin-bottom: 32px;">
+          <h2 id="news-heading" class="section-heading">Latest News</h2>
+          <div class="heading-accent-line"></div>
+        </div>
+
+        <article class="card" style="display:flex; gap:28px; flex-wrap:wrap; align-items:flex-start;">
+          <!-- SWAP with: Project READ recruitment flyer image -->
+          <div class="img-placeholder ph-labeled" role="img"
+               aria-label="Photo placeholder: Project READ recruitment flyer"
+               style="flex:1 1 240px; min-height:220px; border-radius: var(--radius-xl);">
+            <div class="placeholder-inner"><p>Project READ Flyer</p></div>
+          </div>
+          <div style="flex:2 1 320px;">
+            <span class="section-label">June 1, 2026</span>
+            <h3 class="card-heading" style="margin-top:6px;">Project READ Approved by GSU IRB</h3>
+            <p class="body-md" style="margin-bottom: 20px;">
+              Our Project READ: Receptive and Expressive Assessment of Narrative Discourse in Autism
+              has been officially approved by GSU IRB! We are recruiting autistic children between 5 and 8
+              years old to participate in a remote study on language and literacy development.
+            </p>
+            <a href="news.html" class="btn btn-outlined btn-sm">
+              Read all news
+              <span class="material-symbols-outlined" aria-hidden="true" style="font-size:18px;">arrow_forward</span>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ──────────────────────────────────────────────────────────
          CONTACT CTA BANNER
          SQUARESPACE: Banner block — Navy background, 2 columns
          ────────────────────────────────────────────────────────── -->
@@ -352,13 +414,13 @@
 
       <!-- Column 1: Brand -->
       <div>
-        <img src="assets/images/lexa-lab-logo.png" alt="Lexa Lab logo" class="footer-logo-img" />
+        <img src="assets/images/lexa-lab-logo.png" alt="LEXA Lab logo" class="footer-logo-img" />
         <p class="footer-brand-sub">
-          Language, Literacy &amp; Executive Function in Autism<br />
+          Language, Literacy, &amp; Executive Function in Autism Lab<br />
           Georgia State University · Atlanta, Georgia
         </p>
         <p style="margin-top: 12px; font-size: var(--text-sm); color: var(--clr-text-soft);">
-          <a href="mailto:lexalab@gsu.edu" style="color: var(--clr-secondary);">lexalab@gsu.edu</a>
+          <a href="mailto:asdlab@gsu.edu" style="color: var(--clr-secondary);">asdlab@gsu.edu</a>
         </p>
       </div>
 
@@ -369,8 +431,10 @@
           <a href="index.html">Home</a>
           <a href="about.html">About</a>
           <a href="team.html">Team</a>
-          <a href="research.html">Research Projects</a>
+          <a href="research.html">Current Research</a>
+          <a href="past-research.html">Past Research</a>
           <a href="publications.html">Publications</a>
+          <a href="news.html">News</a>
           <a href="contact.html">Contact</a>
         </nav>
       </div>
@@ -387,7 +451,7 @@
     </div>
 
     <div class="footer-bottom">
-      <p class="footer-copy">© 2026 Lexa Lab. Georgia State University Research. All rights reserved.</p>
+      <p class="footer-copy">© 2026 LEXA Lab. Georgia State University Research. All rights reserved.</p>
       <p class="footer-copy">Atlanta, Georgia · Georgia State University</p>
     </div>
   </footer>

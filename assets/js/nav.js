@@ -65,16 +65,59 @@
       }, { passive: true });
     }
 
+    /* ── Research dropdown (desktop) ─────────────────────────── */
+    /* Hover/focus-within is handled in CSS; this adds click + keyboard
+       toggling so the menu also works for touch and keyboard users. */
+    var dropdownToggles = document.querySelectorAll('.nav-dropdown-toggle');
+    dropdownToggles.forEach(function (toggle) {
+      var parent = toggle.closest('.nav-item-dropdown');
+      toggle.addEventListener('click', function (e) {
+        e.stopPropagation();
+        var open = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', open ? 'false' : 'true');
+      });
+      /* Close when focus leaves the dropdown */
+      if (parent) {
+        parent.addEventListener('focusout', function (e) {
+          if (!parent.contains(e.relatedTarget)) {
+            toggle.setAttribute('aria-expanded', 'false');
+          }
+        });
+      }
+    });
+
+    /* Collapse open dropdowns on outside click or Escape */
+    document.addEventListener('click', function (e) {
+      dropdownToggles.forEach(function (toggle) {
+        if (!toggle.closest('.nav-item-dropdown').contains(e.target)) {
+          toggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') {
+        dropdownToggles.forEach(function (toggle) {
+          toggle.setAttribute('aria-expanded', 'false');
+        });
+      }
+    });
+
     /* ── Active nav link ─────────────────────────────────────── */
     /* Set aria-current="page" on links that match the current file. */
     var currentPage = window.location.pathname.split('/').pop() || 'index.html';
-    var allNavLinks = document.querySelectorAll('.nav-link, .mobile-nav-link');
+    var allNavLinks = document.querySelectorAll('.nav-link, .mobile-nav-link, .nav-dropdown-link');
 
     allNavLinks.forEach(function (link) {
       var href = link.getAttribute('href');
       if (href === currentPage || (currentPage === '' && href === 'index.html')) {
         link.classList.add('active');
         link.setAttribute('aria-current', 'page');
+        /* If a dropdown child is active, highlight its parent toggle too. */
+        if (link.classList.contains('nav-dropdown-link')) {
+          var dd = link.closest('.nav-item-dropdown');
+          var parentToggle = dd && dd.querySelector('.nav-dropdown-toggle');
+          if (parentToggle) parentToggle.classList.add('active-parent');
+        }
       }
     });
 
