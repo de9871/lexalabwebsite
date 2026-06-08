@@ -161,26 +161,3 @@ This prototype is the design and content reference for a future Squarespace buil
 | Footer | Footer block — 3-column layout |
 
 ---
-
-## Known Remaining Tasks
-
-Assets still needed for the 6.3 edits (placeholders are in place):
-- [ ] Dr. Yanru Chen headshot → Team page PI card
-- [ ] Project READ recruitment flyer → `research.html` Area 01 + News (6/1) + Home latest-news block
-- [ ] MoLA presentation photo → News (3/13)
-- [ ] Real names/bios for Grad Research Assistants, Undergrad RAs, and Lab Alumni
-- [ ] Verify the Project READ screener URL (`https://forms.cloud.microsoft/r/W8QFnat8qS`) is current
-- [ ] Confirm the standardized lab email `asdlab@gsu.edu` is correct site-wide
-- [ ] Populate `past-research.html` from the PI's separate Past Research document
-
-General / pre-launch:
-- [ ] Add final lab photography (replace all `img-placeholder` divs)
-- [ ] Confirm department affiliation for GSU listing
-- [ ] Confirm campus building and suite details
-- [ ] Add real publication and presentation entries to `publications.html`
-- [ ] Connect the contact / participant registry form before launch
-- [ ] Add a Google Maps embed to `contact.html` (replace `.map-placeholder`)
-- [ ] Verify GSU brand compliance before publishing
-- [ ] Add favicon to all pages
-- [ ] QA mobile layout on real devices
-- [ ] Final accessibility check (WCAG AA), incl. Research dropdown keyboard/touch behavior
