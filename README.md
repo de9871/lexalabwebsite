@@ -160,3 +160,90 @@ This prototype is the design and content reference for a future Squarespace buil
 | Footer | Footer block — 3-column layout |
 
 ---
+
+## Appropriate Artificial Intelligence and Large Language Model Prompting for Adjustments
+
+When using an AI coding assistant or large language model, treat the existing prototype as a locked baseline.
+
+### Core Rule
+
+Make only the exact adjustment requested. Do not expand the task into additional design, content, architecture, cleanup, or feature work.
+
+### Required Behavior
+
+Before making changes:
+
+1. Identify the exact section, component, file, or text covered by the request.
+2. Restate the intended change in no more than three concise points.
+3. Confirm that no unrelated areas need to be modified.
+
+While making changes:
+
+- Modify only the files and sections required for the requested adjustment.
+- Preserve the existing page structure, visual hierarchy, spacing system, typography, colors, navigation, responsive behavior, and implementation notes unless the request specifically changes one of them.
+- Reuse existing components, CSS variables, classes, and patterns whenever possible.
+- Keep desktop and mobile behavior consistent with the current prototype.
+- Leave unrelated code, copy, comments, and formatting untouched.
+
+### Prohibited Without Explicit Approval
+
+Do not:
+
+- Add new pages, sections, features, forms, animations, integrations, or navigation items.
+- Rewrite surrounding content that was not included in the request.
+- Redesign an entire section to solve a small adjustment.
+- Change the brand direction, color palette, typography, or overall visual style.
+- Refactor working code for cleanliness, consistency, or personal preference.
+- Rename files, components, classes, variables, or routes unless required.
+- Replace existing implementation patterns or dependencies.
+- Remove content, comments, accessibility attributes, or Squarespace notes.
+- Introduce placeholder content, invented statistics, fabricated team details, or unsupported claims.
+- Make “helpful” improvements outside the approved scope.
+- Create additional phases, recommendations, audits, or backlog items.
+
+### Handling Unclear or Broader Requests
+
+If the requested change would require modifying something outside the stated scope:
+
+1. Stop before making the broader change.
+2. Explain the dependency or conflict clearly.
+3. Identify the smallest additional change that may be required.
+4. Wait for explicit approval before proceeding.
+
+Do not silently broaden the scope.
+
+### Completion Report
+
+After completing an adjustment, report only:
+
+- The files changed.
+- The exact requested changes completed.
+- Any validation performed.
+- Any unresolved issue directly related to the request.
+- Confirmation that unrelated files and sections were left unchanged.
+
+### Recommended Prompt Format
+
+Use the following format when requesting changes:
+
+> Make one narrow adjustment to this prototype.
+>
+> **Requested change:**  
+> [Describe the exact change.]
+>
+> **Target location:**  
+> [Identify the page, section, component, file, or text.]
+>
+> **Must preserve:**  
+> [List anything that cannot change.]
+>
+> **Do not:**  
+> - Add unrelated features or content.  
+> - redesign surrounding sections.  
+> - refactor unrelated code.  
+> - change the established visual system.  
+> - modify files that are not required.  
+>
+> If the request cannot be completed without expanding the scope, stop and explain why before editing.
+>
+> At completion, list the files changed and confirm that no unrelated changes were made. 
