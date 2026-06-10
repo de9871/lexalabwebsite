@@ -10,7 +10,7 @@ A static HTML/CSS prototype for the **LEXA Lab** (Language, Literacy, & Executiv
 lexa_lab_website/
 ├── index.html          — Home page (lab wordmark + latest-news block)
 ├── about.html          — About the Lab
-├── team.html           — Meet the Team (PI, Grad/Undergrad RAs, Alumni, Tech Support)
+├── team.html           — Meet the Team (current team and alumni)
 ├── research.html       — Current Research (Project READ + research interests)
 ├── past-research.html  — Past Research (content pending PI document)
 ├── publications.html   — Publications & Presentations
@@ -25,7 +25,7 @@ lexa_lab_website/
 │       ├── lexa-lab-logo.png      — Lab logo
 │       ├── project-read-logo.png  — Project READ image
 │       ├── mola-presentation.jpg  — MoLA news photo
-│       └── team/alumni headshots  — Current team, alumni, and technical support
+│       └── team/alumni headshots  — Current team and alumni
 └── README.md           — This file
 ```
 
@@ -113,7 +113,7 @@ The form in `contact.html` is a static HTML form. It does not submit anywhere ye
 |---|---|---|
 | Home | `index.html` | Built — lab wordmark, current team preview, latest Project READ news |
 | About the Lab | `about.html` | Built — placeholder photos |
-| Meet the Team | `team.html` | Built — current team, lab alumni, and technical support |
+| Meet the Team | `team.html` | Built — current team and lab alumni |
 | Current Research | `research.html` | Built — Project READ + other research interests |
 | Past Research | `past-research.html` | Built — awaiting detailed past-research document |
 | Publications | `publications.html` | Built — entries pending |
