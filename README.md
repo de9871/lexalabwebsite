@@ -1,6 +1,6 @@
-# Lexa Lab Website Prototype
+# LEXA Lab Website Prototype
 
-A static HTML/CSS prototype for the **Lexa Lab** (Language, Literacy & Executive Function in Autism) at Georgia State University. This serves as a polished web shell and Squarespace design reference — not a production-deployed site.
+A static HTML/CSS prototype for the **LEXA Lab** (Language, Literacy, & Executive Function in Autism Lab) at Georgia State University. This serves as a polished web shell and Squarespace design reference — not a production-deployed site.
 
 ---
 
@@ -22,7 +22,10 @@ lexa_lab_website/
 │   ├── js/
 │   │   └── nav.js      — Mobile menu toggle, scroll shadow, active link state
 │   └── images/
-│       └── lexa-lab-logo.png — Lab logo (replace with final file if updated)
+│       ├── lexa-lab-logo.png      — Lab logo
+│       ├── project-read-logo.png  — Project READ image
+│       ├── mola-presentation.jpg  — MoLA news photo
+│       └── team/alumni headshots  — Current team, alumni, and technical support
 └── README.md           — This file
 ```
 
@@ -59,7 +62,7 @@ Then visit: `http://localhost:8000`
 | Team member names | `team.html` — replace role headings, `.ph-note` spans, and bio text in each `.team-card` |
 | Team bios | `team.html` — `<p class="body-md">` inside each `.team-card` |
 | Research area details | `research.html` — each `<section>` labeled "Research Area 01–06" |
-| Contact email | `contact.html` info card + all 6 footer blocks — replace `lexalab@gsu.edu` |
+| Contact email | `contact.html` info card + footer blocks — current value is `asdlab@gsu.edu` |
 | Contact form | `contact.html` — `<form class="form-stack">` |
 | Footer | `<footer class="site-footer">` in each HTML file |
 | Logo | `assets/images/lexa-lab-logo.png` — replace file and keep the same filename, or update all `src` references |
@@ -86,13 +89,7 @@ Each photo slot is a `<div class="img-placeholder">` with an `aria-label` descri
 
 ## Team Content Guide
 
-Team cards in `team.html` (and the preview grid in `index.html`) use role titles as temporary headings and `<p class="ph-note">` tags as content reminders. Replace with confirmed content from the PI:
-
-- `<h3>` or `<h4>` — replace role placeholder (e.g., "Principal Investigator") with the person's actual name
-- `.team-card-role` span — update department or research area as needed
-- `<p class="body-md">` — replace generic bio text with the real bio
-- `<p class="ph-note">Name and bio to be added.</p>` — delete this line once real content is in place
-- Circular `<div class="img-placeholder">` headshot — replace with a real `<img>` headshot
+Team cards in `team.html` and the preview grid in `index.html` now use confirmed names, roles, and available headshots. To update the roster, edit the relevant card names, role text, and `<img src="assets/images/...">` references in those two files.
 
 ---
 
@@ -114,11 +111,13 @@ The form in `contact.html` is a static HTML form. It does not submit anywhere ye
 
 | Page | File | Status |
 |---|---|---|
-| Home | `index.html` | Built — placeholder photos and team names |
+| Home | `index.html` | Built — lab wordmark, current team preview, latest Project READ news |
 | About the Lab | `about.html` | Built — placeholder photos |
-| Meet the Team | `team.html` | Built — placeholder names, bios, and headshots |
-| Research Projects | `research.html` | Built — research area text complete; project details pending |
+| Meet the Team | `team.html` | Built — current team, lab alumni, and technical support |
+| Current Research | `research.html` | Built — Project READ + other research interests |
+| Past Research | `past-research.html` | Built — awaiting detailed past-research document |
 | Publications | `publications.html` | Built — entries pending |
+| News | `news.html` | Built — five dated news items with supplied images |
 | Contact / Registry | `contact.html` | Built — form not yet connected |
 
 ---

@@ -1,5 +1,5 @@
 /* ================================================================
-   Lexa Lab — Navigation Script
+   LEXA Lab — Navigation Script
    Handles: mobile menu toggle, scroll shadow, active link state
    ================================================================ */
 
