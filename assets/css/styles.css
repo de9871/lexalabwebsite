@@ -1437,7 +1437,6 @@ textarea.form-input { resize: vertical; min-height: 140px; }
 /* Callout / warm note */
 .callout-warm {
   background: var(--clr-gold-bg);
-  border-left: 4px solid var(--clr-gold);
   border-radius: 0 var(--radius-md) var(--radius-md) 0;
   padding: 20px 24px;
   display: flex;
