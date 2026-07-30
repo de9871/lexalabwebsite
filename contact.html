@@ -203,7 +203,7 @@
 
               <!-- SQUARESPACE: Use a Form block for this section -->
               <!-- TODO: Connect this form to Squarespace, Formspree, or an approved final form handler before launch. -->
-              <form class="form-stack" action="#" method="POST" novalidate aria-label="Participant registry form">
+              <form class="form-stack" action="#" method="POST" aria-label="Participant registry form">
 
                 <!-- Parent / Guardian Name -->
                 <div class="form-group">
@@ -276,28 +276,25 @@
                   </p>
                 </div>
 
-                <!-- Child age range (optional) -->
+                <!-- Child age -->
                 <div class="form-group">
                   <label class="form-label" for="child-age">
-                    Child Age Range <span style="font-weight:400; color: var(--clr-text-soft);">(optional)</span>
+                    Child Age <span aria-label="required">*</span>
                   </label>
-                  <select
+                  <input
                     class="form-input"
+                    type="number"
                     id="child-age"
                     name="child_age"
+                    min="0"
+                    step="1"
+                    inputmode="numeric"
+                    placeholder="Enter child’s age"
+                    required
                     aria-describedby="child-age-hint"
-                  >
-                    <option value="">-- Select an age range --</option>
-                    <option value="0-2">Under 2 years</option>
-                    <option value="2-4">2 to 4 years</option>
-                    <option value="4-6">4 to 6 years</option>
-                    <option value="6-9">6 to 9 years</option>
-                    <option value="9-12">9 to 12 years</option>
-                    <option value="12-plus">12 years and older</option>
-                    <option value="not-applicable">Not applicable</option>
-                  </select>
+                  />
                   <p id="child-age-hint" class="body-sm" style="margin-top: 4px;">
-                    Helps us identify which studies your family may be eligible for.
+                    Enter your child’s age in whole years.
                   </p>
                 </div>
 
