@@ -968,6 +968,14 @@ h1, h2, h3, h4, h5 {
   line-height: var(--lh-relaxed);
 }
 .check-icon { color: var(--clr-secondary); flex-shrink: 0; margin-top: 2px; }
+.solid-blue-bullet {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--clr-primary-action);
+  flex: 0 0 8px;
+  margin-top: 0.55em;
+}
 
 
 /* ================================
