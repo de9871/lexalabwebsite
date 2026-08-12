@@ -103,13 +103,13 @@
     });
 
     /* ── Active nav link ─────────────────────────────────────── */
-    /* Set aria-current="page" on links that match the current file. */
-    var currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    /* Set aria-current="page" on links that match the current clean URL slug. */
+    var currentPage = window.location.pathname.replace(/^\/+|\/+$/g, '') || '/';
     var allNavLinks = document.querySelectorAll('.nav-link, .mobile-nav-link, .nav-dropdown-link');
 
     allNavLinks.forEach(function (link) {
-      var href = link.getAttribute('href');
-      if (href === currentPage || (currentPage === '' && href === 'index.html')) {
+      var href = link.getAttribute('href').split('#')[0].replace(/^\/+|\/+$/g, '') || '/';
+      if (href === currentPage) {
         link.classList.add('active');
         link.setAttribute('aria-current', 'page');
         /* If a dropdown child is active, highlight its parent toggle too. */
